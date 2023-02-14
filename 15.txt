@@ -1,0 +1,65 @@
+
+
+Calculator :
+Write a program that works as a simple calculator. It reads an integer for choice.
+
+If the choice is 1, 2 integers are taken for input and their sum is printed.
+If the choice is 2, 2 integers are taken for input and their difference is printed.
+If the choice is 3, 2 integers are taken for input and their product is printed.
+If the choice is 4, 2 integers are taken for input and their quotient is printed.
+If the choice is 5, 2 integers are taken for input and their remainder is printed.
+If the choice is 6, the program exits,
+For any other choice, print "Invalid Operation" and ask for choice again.
+
+Note: Each answer in next line.
+Input format:
+Take integers as input, in accordance to the description of the question.
+
+Constraints:
+Time Limit: 1 second
+
+Output format:
+The output lines must be as prescribed in the description of the question.
+
+Sample Input:
+3 1 2 4 4 2 1 3 2 7 6
+
+Sample Output:
+2 2 5 Invalid Operation
+
+   
+bFlag = True
+while bFlag:
+    ch = int(input())
+    if ch == 1:
+        a = int(input())
+        b = int(input())
+        print(a + b)
+        
+    elif ch == 2:
+        a = int(input())
+        b = int(input())
+        print(a - b)
+        
+    elif ch == 3:
+        a = int(input())
+        b = int(input())
+        print(a * b)
+        
+    elif ch == 4:
+        a = int(input())
+        b = int(input())
+        print(a // b)
+        
+        
+    elif ch == 5:
+        a = int(input())
+        b = int(input())
+        print(a % b)
+        
+    elif ch == 6:
+        bFlag = False
+        exit
+        
+    else:
+        print("Invalid Operation")
